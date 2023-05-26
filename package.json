@@ -1,20 +1,40 @@
 {
-  "name": "teleport-project-react",
-  "version": "0.0.0",
+  "name": "hola-template",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.0.0-alpha.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-helmet": "^6.1.0",
+    "prop-types": "15.7.2"
+  },
   "scripts": {
-    "build": "vite build",
-    "preview": "vite preview",
-    "dev": "vite"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "craco eject"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss": "^8.2.15",
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^3.0.24",
-    "typescript": "^4.4.4",
-    "vite": "^4.1.1",
-    "vite-plugin-jspm": "^0.2.0"
-  },
-  "dependencies": {
-    "@vercel/analytics": "^1.0.1"
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14"
   }
 }
